@@ -3,7 +3,9 @@
 This test task is about implementing a feature of chunk uploading with file validation.
 
 The main purpose is to see your code structure, code quality, and approach in general.
+
 ## Getting Started
+
 ### Requirements
 
 - Make it possible to upload several chunks simultaneously 
@@ -13,13 +15,13 @@ The main purpose is to see your code structure, code quality, and approach in ge
 - No unnecessary things in the final code like commented code, debug logs, etc
 - Follow best practices as much as possible and focus on quality
 
-We expect you to use the Laravel Facade and Builder pattern for uploader implementation
+We expect you to use the Laravel Facade and Builder pattern for uploader implementation.
 
 ### API
 
 Only 1 endpoint is required: <b>POST /v1/upload</b>
 
-####Request:
+#### Request
 ```json
 {
     "chunk": "required|file",
@@ -34,16 +36,18 @@ Only 1 endpoint is required: <b>POST /v1/upload</b>
 - `index` - Current chunk index
 - `total` - Total number of chunks
 
-####Responses:
+#### Responses:
 
-####Chunks uploaded:
+#### Chunks uploaded:
+
 ```json
 {
     "status": "success"
 }
 ```
 
-####All chunks uploaded:
+#### All chunks uploaded:
+
 ```json
 {
     "status": "success",
@@ -51,7 +55,8 @@ Only 1 endpoint is required: <b>POST /v1/upload</b>
 }
 ```
 
-####Validation error:
+#### Validation error:
+
 ```json
 {
     "status": "error",
